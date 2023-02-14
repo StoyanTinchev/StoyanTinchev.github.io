@@ -1,0 +1,41 @@
+.about {
+    display: none;
+    padding-left: 260px;
+    padding-top: 50px;
+    color: lightgrey;
+}
+
+#about {
+    display: block;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.projectsDiv {
+    display: flex;
+}
+
+#projects li {
+    padding-top: 2rem
+}
+
+.tuesGG21 {
+    width: 50%;
+    height: 50%;
+}
+
+.tuesGG21_div {
+    text-align: center;
+}
+
+#contacts {
+    margin-left: 2rem
+}
+
+#contacts div,  #contacts p {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}

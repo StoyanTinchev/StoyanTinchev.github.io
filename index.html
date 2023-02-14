@@ -1,14 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Valentine's day</title>
-    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/CornerBar.css"/>
+    <link rel="stylesheet" href="static/css/TopBar.css"/>
+    <link rel="stylesheet" href="static/css/ItemsCorner.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script src="static/js/myPortfolio.js"></script>
+    <title>PortfolioST</title>
 </head>
 <body>
-<div class="general" id="popUp1">
-    <h1>U just got hacked >:)</h1>
-    <button class="active" onclick="location.href='popUp2.html'">OK</button>
+<div class="topBar">
+    <div class="divLang">
+        <img src="static/resources/lang.gif" alt="logo" class="langGif">
+    </div>
 </div>
+<div class="cornerBar">
+    <div class="me-info">
+        <div class="infoAuthor">
+            <img src="static/resources/me.jpg" alt="author" class="authorImg"/>
+            <h1 class="nameAuthor">Stoyan Tinchev</h1>
+        </div>
+    </div>
+    <div class="navItems">
+        <nav>
+            <ul style="list-style-type: none">
+                <li class="active"><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="divAuthor">
+        <img src="static/resources/me.gif" alt="author" class="authorGif"/>
+    </div>
+</div>
+<div>
+    <div class="about" id="about">
+        <h1>About</h1>
+        <table style="text-align: center; width: 100%; height: 100%">
+            <tr>
+                <td style="text-align: center">
+                    <h2>What about me?</h2>
+                    <h4>- I'm currently working on <a href="https://github.com/boki1/eugene">enguene</a></h4>
+                    <h4>- I'm currently working on <a href="https://github.com/StoyanTinchev/musicial-tesla-coil">musicial-tesla-coil</a>
+                    </h4>
+                    <h4>- One of my previous projects is <a href="https://github.com/boki1/verda">Verda</a></h4>
+                    <h4>- One of my previous projects is <a
+                            href="https://github.com/StoyanTinchev/Project_remote_glove">Project remote glove</a></h4>
+                    <h4>- I'm currently learning C++20 and Kotlin</h4>
+                    <h4>- How to reach me: <a href="mailto:st8tinchev@gmail.com">st8tinchev@gmail.com</a> or <a
+                            href="https://www.linkedin.com/in/stoyan-tinchev-524949208" target="blank"><img
+                            style="text-align: center"
+                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
+                            alt="stoyan-tinchev" height="30" width="40"/></a></h4>
+                </td>
+                <td style="text-align: center">
+                    <img width="100%"
+                         src="https://github-readme-stats.vercel.app/api?username=StoyanTinchev&show_icons=true&theme=merko&hide_border=true"/>
+                    <img width="100%"
+                         src="https://activity-graph.herokuapp.com/graph?username=StoyanTinchev&show_icons=true&count_private=true&theme=rogue&area=true&hide_border=true"/>
+                </td>
+            </tr>
+        </table>
+        <img width="100%"
+             src="https://github-readme-streak-stats.herokuapp.com/?user=StoyanTinchev&show_icons=true&locale=en&layout=demo&theme=merko&hide_border=true"/>
+
+        <h2>Programming skills:</h2>
+        <p style="text-align: left">
+            <a href="https://www.cprogramming.com/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c"
+                    width="40" height="40"/> </a>
+            <a href="https://www.w3schools.com/cpp/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                    alt="cplusplus" width="40" height="40"/> </a>
+            <a href="https://www.python.org" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                    alt="python" width="40" height="40"/> </a>
+            <a href="https://www.java.com" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="java" width="40" height="40"/> </a>
+            <a href="https://www.java.com" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg"
+                    alt="java" width="40" height="40"/> </a>
+            <a href="https://www.mysql.com/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                    alt="mysql" width="40" height="40"/> </a>
+            <a href="https://www.linux.org/" target="_blank"> <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                    alt="linux" width="40" height="40"/> </a>
+            <a href="https://git-scm.com/" target="_blank"> <img
+                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+            </a></p>
+        <!--TODO: include picture-->
+    </div>
+    <div class="about" id="projects">
+        <h1>Projects</h1>
+        <ul>
+            <li>
+                <h2>Reworked musical tesla coil</h2>
+                <p style="margin-top: 0">Reworked musical tesla coil in smaller scaling.
+                    Using an application with which we choose a song and send it to the coil interrupter.
+                    We will have 2 applications for mobile android phones - one complete mp3 player,
+                    that play/pause songs and all that trivial operations. Second - app that list all ".wav"
+                    files and than with holding chosen song - it will arrive new dialog window that asks the
+                    user if he want to send it via Bluetooth to the interrupter or cancel that operation.
+                    Then the interrupter sends out modified pulses which interrupt the coil supply so that
+                    the output to the coil has the same frequency as the audio signal.
+                    The software for the interrupter will wait for upload command, after which the program
+                    reads the byte sequence and stores it in an external flash memory. If a play command is sent the
+                    program reads the content of that memory and converts it into respective PWM(Pulse Width Modulation)
+                    signal.
+                </p>
+            </li>
+            <li>
+                <h2>Verda - a chatbot which speaks the language of ecology</h2>
+
+                <div class="projectsDiv">
+                    <img src="https://user-images.githubusercontent.com/36764968/110909706-12eee800-8319-11eb-9ece-c281c4b45409.png"
+                         alt="Verda" width="25%" height="25%"/>
+
+                    <div><p>Verda is a chatbot that helps you <strong>understand</strong> and <strong>react</strong>
+                        appropriately to the
+                        problems which surround us.</p>
+
+                        <h4 style="padding-top: 2rem">How can Verda help us?</h4>
+
+                        <p>The amount of precious resources that our planet provides us are declining daily - and all of
+                            that is
+                            our own fault. Deforestation, biodiversity loss and plastic pollution are only a small
+                            portion
+                            of the
+                            global disaster. Living our lives without complying to the nature's laws is not doing us any
+                            good and we
+                            have to find a way to change this.
+
+                            Thus, our idea - Verda. A chatbot, which gives you information about matured problems and
+                            alternative
+                            solutions to them.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>PROJECT Remote glove</h2>
+
+                <div class="projectsDiv">
+                    <img src="https://github.com/StoyanTinchev/Project_remote_glove/raw/master/icon.png"
+                         alt="Verda" width="40%" height="40%"/>
+
+                    <div style="margin-left: 2rem"><p>Our project is a <strong>GLOVE</strong> that connects to the TV
+                        via Bluetooth and
+                        by moving it left and right imitates a remote. Channels and sound can be
+                        controlled via an infrared diode, and the mouse cursor can be moved if you are in an
+                        online application. All this only with slight movements of the hand.</p>
+                        <p>Our project is divided into 2 parts - a bluetooth receiver and a bluetooth transmitter.
+                            The receiver connects to the TV and is immediately recognized as a mouse. The transmitter,
+                            which is in the glove, then connects to the receiver. Control of the mouse cursor is done by
+                            sending signals from an accelerometer connected to the transmitter.
+                        </p>
+                    </div>
+                </div>
+                <h4>Why?</h4>
+                <p><strong>The aim of our project is to develop a more functional and innovative TV remote
+                    control
+                    (glove)</strong> and, above all, to make it easier for people watching YouTube or Netflix by
+                    providing an easy and convenient mechanism for controlling the mouse cursor.
+                </p>
+                <p>
+                    The current TV remotes have not changed much in the last 10 years. They provide a good
+                    method for managing the channels and basic functionalities of the TV, but with the
+                    advancement of technology, manufacturers make and sell "smart TV", which have access to the
+                    Internet and applications such as Internet browser, youtube, netflix. However, the
+                    navigation for these applications is still not well integrated and this is where our product
+                    comes in!
+                </p>
+            </li>
+        </ul>
+
+    </div>
+    <div class="about" id="certificates">
+        <h1>Certificates</h1>
+        <h2 style="margin-left: 2rem">All of the certificates I possess are available
+            <a href="https://drive.google.com/drive/u/2/folders/1DliV43dxyJz10_XEBt7X7SymfLWmwmqn">here</a>.
+            Some documents I have earned are from local school competitions,
+            others are gained by successful completion of full-time courses such as Java,
+            Python, SQL, C, C++, and many more.</h2>
+        <div class="tuesGG21_div">
+            <img src="static/resources/hackTuesGG2.jpg" alt="HackTuesGG2" class="tuesGG21">
+        </div>
+    </div>
+    <div class="about" id="contacts">
+        <h1>Contacts</h1>
+        <h3>Currently, I'm a student in 11th grade at 'TUES'-
+            Technological School "Electronic Systems" at the Technical University - Sofia.
+            I'm quite keen on discovering and exploring the unknown in the technological world.
+            I would create new formulas or computer algorithms rather than use others' developers' work.
+            I pretty much enjoy any sports activities and mainly winter sports. Also, I'm developing
+            my cognitive skills by fast keyboard typing which helps my IT progression.</h3>
+        <h3>You may wonder why I talk about myself in contacts - it's because
+            I want to be sure that you will contact me after read this information.</h3>
+        <h2 style="margin-top: 5rem">If you want to contact me, you can use the following links:</h2>
+        <div>
+            <img src="static/resources/emailContact.png" alt="email" style="width: 4%; height: 4%;
+            background-color: white">
+            <p>
+                <a href="mailto:st8tinchev@gmail.com">st8tinchev@gmail.com</a>
+            </p>
+        </div>
+        <div>
+            <img src="static/resources/houseContact.jpeg" alt="house" style="width: 4%; height: 4%;
+            background-color: white">
+            <p>
+                <a href="mailto:st8tinchev@gmail.com">Mladost 3, 1712 Sofia</a>
+            </P>
+        </div>
+        <div>
+            <img src="static/resources/phoneContact.png" alt="phone" style="width: 4%; height: 4%;
+            background-color: white">
+            <p>
+                <a href="mailto:st8tinchev@gmail.com">0899997798</a>
+            </p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

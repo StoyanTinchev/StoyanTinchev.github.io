@@ -1,0 +1,98 @@
+body{
+    background: #1c2021;
+    position: relative;
+}
+a {
+    color: darksalmon;
+}
+
+/* the initial div for the corner bar */
+.cornerBar {
+    top: 0;
+    height: 100%;
+    width: 16rem;
+    background-color: darkcyan;
+    position: fixed;
+}
+
+/* #################################################### */
+
+
+/* My image + name */
+.infoAuthor {
+    text-align: center;
+}
+
+.authorImg {
+    width: 10rem;
+    height: 10rem;
+    margin: 45px auto 0;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.nameAuthor {
+    margin-top: 10px;
+    color: wheat;
+    font-family: Athelas, sans-serif;
+}
+
+/* #################################################### */
+
+
+/* The different tabs */
+.navItems {
+    margin-top: 2rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navItems li {
+    position: relative;
+    display: table;
+}
+
+.navItems li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navItems li a:hover, .navItems li.active a {
+    font-weight: bold;
+    color: wheat;
+}
+
+.navItems li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0.1rem;
+    background-color: black;
+    transition: width .3s ease-in-out;
+}
+
+.navItems li:hover:after {
+    width: 100%;
+}
+
+/* #################################################### */
+
+
+/* My gif */
+.divAuthor {
+    text-align: center;
+}
+
+.authorGif {
+    width: 98%;
+    height: 98%;
+    margin: 5rem auto 30px;
+    border-radius: 50%;
+}
+
+/* #################################################### */
